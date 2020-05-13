@@ -13,7 +13,7 @@ def parse_args():
     """
     :return:进行参数的解析
     """
-    description = "iMRMF is able to simultaneously identify m6A, m5C, m1A, ψ and A-to-I modifications in Homo sapiens, Mus musculus and Saccharomyces cerevisiae. Thank you very much for submitting the error message to Liukeweiaway@hotmail.com.  Example: python im6A-TS-cnn.py -i sequence.txt -o ccc.html -s Human -m all -t normal "
+    description = "We propose a new model called im6A-TS-cnn, which can identify m6A sites in brain, liver, kidney, heart and testis from human, mouse and rat by using the algorithm of convolutional neural network. Thank you very much for submitting the error message to Liukeweiaway@hotmail.com.  Example: python im6A-TS-cnn.py -i sequence.txt -o ccc.html -s Human -t tissues "
     parser = argparse.ArgumentParser(description=description)
     help = "The correct path of address"
     parser.add_argument('--addresses', help=help)
