@@ -31,16 +31,18 @@ Optional arguments:
   -s SPECIES, --species SPECIES
                         -m Human/Mouse/Rat (Choose one from three species to
                         use.)
-  -m MODIFICATION, --tissues TISSUES
+  -m TISSUES, --tissues TISSUES
                         brain/liver/kidney/heart/testis (We can choose testis you want)
+  -ts THRESHOLDS, --thresholds THRESHOLDS
+                        low/normal/high (We offer 3 options based on the difference in specificity, which are low, normal and high.)
 ```
 Example:
 --------
 ```
-python im6A-TS-cnn.py -i sequence.txt -o ccc.html -s Human -t brain
+python im6A-TS-cnn.py -i sequence.txt -o ccc.html -s Human -t brain  -ts normal
 ```
 ***
-Version number：V0.0.1 <br>
+Version number：V0.1.2 <br>
 Updated date：2020-05-03 <br>
 Email: Liukeweiaway@hotmai.com 
 ***
