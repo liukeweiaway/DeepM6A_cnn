@@ -20,8 +20,8 @@ def parse_args():
     parser.add_argument('-i', '--inputFile', help='-i input.txt (The input file is a complete Fasta format sequence.)')
     parser.add_argument('-o', '--outputFile', help='-o output.html (Results are saved under results folder.)')
     parser.add_argument('-s', '--species', help='-s Human/Mouse/Rat (Choose one from three species to use.)')
-    parser.add_argument('-t', '--tissues', help='-t brain/liver/kidney/heart/testis (We can choose testis you want.)')
-    # parser.add_argument('-t', '--threshold', help='-m low/normal/high (We offer 3 options based on the difference in specificity, which are low, normal and high.)')
+    parser.add_argument('-t', '--tissues', help='-t Human(brain/liver/kidney/heart/testis) Mouse(brain/liver/kidney) Rat(brain/liver/kidney) (We can choose testis you want.)')
+    parser.add_argument('-ts', '--threshold', help='-ts low/normal/high (We offer 3 options based on the difference in specificity, which are low, normal and high.)')
     args = parser.parse_args()
     return args
 

@@ -32,9 +32,9 @@ Optional arguments:
                         -m Human/Mouse/Rat (Choose one from three species to
                         use.)
   -m TISSUES, --tissues TISSUES
-                        brain/liver/kidney/heart/testis (We can choose testis you want)
+                        -t Human(brain/liver/kidney/heart/testis) Mouse(brain/liver/kidney) Rat(brain/liver/kidney) (We can choose testis you want.)
   -ts THRESHOLDS, --thresholds THRESHOLDS
-                        low/normal/high (We offer 3 options based on the difference in specificity, which are low, normal and high.)
+                        -ts low/normal/high (We offer 3 options based on the difference in specificity, which are low, normal and high.)
 ```
 Example:
 --------
