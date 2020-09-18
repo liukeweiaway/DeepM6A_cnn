@@ -13,8 +13,6 @@ from mainf import Threshold
 
 
 def Deep_M6A(sequence, species, tissues, threshold):
-    # importance_dict_sorted_list_num_M6A = [1834, 1500, 1831, 1503, 16, 1446, 1489, 1882, 30, 113, 997, 1545, 1857, 1892, 87, 4, 147, 1866, 209, 369, 1395, 1366, 1520, 1401, 1422, 1397, 1398, 279, 1454, 40, 243, 1417, 1498, 42, 81, 377, 1441, 51, 12, 1557, 17, 404, 96, 724]
-    # XG_iRNA_hg_M6A = load('model/hg/hg_xgb_M6A_10fold')
     modelPath = 'model/' + species + '/' + tissues
     network = tf.keras.models.load_model(modelPath)
     M_threshold = Threshold.choiceThreshold(species, tissues, threshold)
@@ -36,7 +34,6 @@ def Deep_M6A(sequence, species, tissues, threshold):
         file_inter_M6A = open('inter_use/hg_inter_use_M6A.txt', 'w')
         if base == 'A':
             new_line = line.strip()[hg_n_base_41_M6A - 20:hg_n_base_41_M6A + 21]
-            # ---f nc dnc tnc tenc pnc nd dnd ncp dpcp onehot dbe-----------------
             print(*iMRMFeatureEtraction.onehot(new_line, 41), file=file_inter_M6A)
             file_inter_M6A.close()
             pddtest = pd.read_csv("inter_use/hg_inter_use_M6A.txt", sep=' ', header=None)
